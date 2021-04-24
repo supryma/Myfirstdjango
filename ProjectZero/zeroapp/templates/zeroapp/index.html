@@ -1,0 +1,18 @@
+{% extends 'zeroapp/loyal.html' %}
+
+{% block title %} Главная str {% endblock %}
+
+{% block content %}
+    <div class="features">
+        <h1>{{ title }}</h1>
+        <button class="btn btn-warning">Тут ничего нет</button>
+
+        {% for el in values %}
+            <p>{{ el }}</p>
+        {% endfor %}
+
+        {% for el in obj %}
+            <p>{{ el }}</p>
+        {% endfor %}
+    </div>
+{% endblock %}
